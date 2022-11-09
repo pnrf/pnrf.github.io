@@ -18,26 +18,43 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Заметки начинающего веб-разработчика
+email: pankratov.web@mail.ru
+
+description: "В этом блоге я пишу для себя небольшие заметки по веб-разработке. 
+Цель: сохранить полезную для меня информацию в одном месте, чтобы было проще 
+вспомнить то, о чем забыл, и не забыть то, о чем вспомнил."
+
+author:
+  name: Юрий Панкратов
+  email: "pankratov.web@mail.ru"
+
+# description: >- # this means to ignore newlines until "baseurl:"
+#  Write an awesome description for your new site here. You can edit this
+#  line in _config.yml. It will appear in your document head meta (for
+#  Google search results) and in your feed.xml site description.
 
 domain: pnrf.github.io
 url: https://pnrf.github.io
 
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+header_pages:
+  - about.md
+  - portfolio.md
+
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  "pnrf"
 
 # Build settings
 theme: minima
+minima:
 skin: solarized-dark
 plugins:
   - jekyll-feed
+
+show_excerpts: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
