@@ -18,16 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Заметки начинающего веб-разработчика
-email: pankratov.web@mail.ru
+title: Заметки по веб-разработке 
+#email: pankratov.web@mail.ru
 
-description: "В этом блоге я пишу для себя небольшие заметки по веб-разработке. 
-Цель: сохранить полезную для меня информацию в одном месте, чтобы было проще 
+description: "На этом сайте я пишу для себя небольшие заметки по веб-разработке. 
+Цель проста: сохранить полезную информацию в одном месте, чтобы было проще 
 вспомнить то, о чем забыл, и не забыть то, о чем вспомнил."
 
-author:
-  name: Юрий Панкратов
-  email: "pankratov.web@mail.ru"
+# author:
+author: © 2022. Юрий Панкратов
+# email: pankratov.web@mail.ru
 
 # description: >- # this means to ignore newlines until "baseurl:"
 #  Write an awesome description for your new site here. You can edit this
@@ -40,17 +40,15 @@ url: https://pnrf.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-header_pages:
-  - about.md
-  - portfolio.md
-
-twitter_username: jekyllrb
-github_username:  "pnrf"
+# twitter_username: jekyllrb
+# github_username:  "pnrf"
 
 # Build settings
 theme: minima
+
 minima:
-skin: solarized-dark
+  skin: dark
+
 plugins:
   - jekyll-feed
 
