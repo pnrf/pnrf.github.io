@@ -5,7 +5,13 @@ date:   2022-11-09 13:25:18 +0300
 categories: jekyll
 ---
 
-Временно оставляю этот пост как есть, в качестве образца для своих публикаций.
+Как быстро создать свой блог? Весьма удобным решением мне показалась связка [Github](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll) и [Jekyll](https://jekyllrb.com), которая позволила без знания [Ruby](https://www.ruby-lang.org/ru/):
+
+- быстро развернуть блог на [GitHub Pages](https://docs.github.com/en/pages), используя адаптивный шаблон [minima](https://github.com/jekyll/minima);
+- публиковать посты из документов Markdown, хранящихся в github-репозитории;
+- пользоваться встроенным инструментом [Rouge](http://rouge.jneen.net/?error=500) для подсветки кода.
+
+Вот некоторые способы кастомизации:
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
