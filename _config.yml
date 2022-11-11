@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Заметки для веб-разработки 
+title: Заметки веб-разработчика 
 
-description: "На этом сайте я делаю заметки о полезных веб-технологиях, чтобы было проще 
+description: "На этом сайте я оставляю небольшие заметки о веб-технологиях, чтобы было проще 
 вспомнить то, о чем забыл, и не забыть то, о чем вспомнил."
 
 author: © 2022. Юрий Панкратов
