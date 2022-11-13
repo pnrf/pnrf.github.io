@@ -7,5 +7,5 @@ categories: dev tools
 
 Онлайн-курсы по JS, TypeScript, React, Redux от `Михаила Непомнящего` ([сайт](https://www.mishanep.com), [Youtube](https://www.youtube.com/c/МихаилНепомнящий/playlists)). Михаил профессиональный веб-разработчик и преподаватель. Объясняет крайне доходчиво. 
 
-Посмотрел:
+Посмотрел:  
 [x] [Начало работы со StoryBook](https://www.youtube.com/watch?v=lUf8qC_xFHo)
