@@ -129,7 +129,9 @@ yarn-error.log*
 ```
 
 - скорректировать файловую структуру. Например:  
-```js
+```html
+<p>
+
 - public/
     - favicon.ico
     - index.html
@@ -173,5 +175,7 @@ yarn-error.log*
 - README.md
 - package-lock.json
 - package.json
+
+</p>
 ```
 - создать компоненты
