@@ -104,3 +104,79 @@ yarn-error.log*
 - отредактировать `Readme.md`;
 
 - из директории с проектом установить Storybook командой: `npx storybook init`. При необходимости выполнить требуемые установщиком действия. Storybook после установки запускается командой `npm run storybook` на 6006 порту (`http://localhost:6006/`).
+
+- в директории `public` изменить favicon.ico, robots.txt и index.html:
+
+```html
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="детский, сад, Митино, дети, английский, язык">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Английский детский сад в Митино для детей с 2 до 7 лет с погружением в языковую среду, собственной кухней, охраняемой огороженной территорией, медицинским кабинетом и соляной пещерой для сохранения и укрепления здоровья детей">
+    <title>Kids Story — билингвальный детский сад в Митино</title>
+  </head>
+  <body>
+    <noscript>Чтобы сайт работал корректно, разрешите вашему браузеру использовать JavaScript. Это можно сделать в настройках вашего браузера</noscript>
+    <div id="root"></div>
+  </body>
+</html>
+```
+
+- скорректировать файловую структуру. Например:
+```
+public/
+    favicon.ico
+    index.html
+    robots.txt
+src/
+    components/
+        App/
+            App.css
+            App.js
+        Footer/
+            Footer.css
+            Footer.js
+        etc...
+
+    contexts/
+        CurrentUserContext.js
+
+    images/
+        icons/
+            arrow-right-white.svg
+        logo.svg
+        etc...
+
+    utils/
+        MainApi.js
+        constants.js
+        jwt.js
+        etc...
+
+    vendor/
+        fonts/
+            Inter-Black.woff
+            Inter-Black.woff2
+            etc...
+            LICENSE.txt
+            fonts.css
+        normalize.css
+
+    App.test.js
+    index.css
+    index.js
+    reportWebVitals.js
+    setupTests.js
+
+.editorconfig
+.gitignore
+README.md
+package-lock.json
+package.json
+```
