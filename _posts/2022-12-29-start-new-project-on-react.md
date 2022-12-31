@@ -180,3 +180,4 @@ README.md
 package-lock.json
 package.json
 ```
+- создать компоненты
