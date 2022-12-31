@@ -5,15 +5,18 @@ date:   2022-12-29 11:38:01 +0300
 categories: dev tools
 ---
 
-Алгоритм действий для запуска нового проекта на [React.js](https://ru.reactjs.org/docs/getting-started.html) с применением [Storybook](https://storybook.js.org).
+Алгоритм действий для запуска нового проекта на [React.js](https://ru.reactjs.org/docs/getting-started.html). Компоненты протестированы в [Storybook](https://storybook.js.org).
 
 ### Последовательность действий:
 - на github.com создать новый репозиторий;
+
 - клонировать репозиторий на компьютер командой `git clone <SSH>`, где SSH копируем из созданного репозитория;
+
 - находясь в родительской директории склонированного репозитория, установить React Create App командой `npx create-react-app название_проекта`. Название проекта должно совпадать с названием склонированного репозитория;
+
 - создать файл `.editorconfig`:
 
-```js
+```
 //.editorconfig
 
 # http://editorconfig.org
@@ -64,7 +67,9 @@ insert_final_newline = true
 
 - изменить файл `.gitignore`:
 
-```js
+```
+//.gitignore
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # Logs
@@ -105,3 +110,5 @@ yarn-debug.log*
 yarn-error.log*
 ```
 - отредактировать `Readme.md`;
+
+- из директории с проектом установить Storybook командой: `npx storybook init`. При необходимости выполнить требуемые установщиком действия. После установки Storybook запускается командой `npm run storybook` на 6006 порту (`http://localhost:6006/`).
