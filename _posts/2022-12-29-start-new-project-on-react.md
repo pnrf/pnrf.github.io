@@ -130,7 +130,6 @@ yarn-error.log*
 
 - скорректировать файловую структуру. Например:  
 
-```html
 <code>
     - public/
         - favicon.ico
@@ -176,6 +175,5 @@ yarn-error.log*
     - package-lock.json
     - package.json
 </code>
-```
 
 - создать компоненты
