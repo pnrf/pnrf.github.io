@@ -129,55 +129,49 @@ yarn-error.log*
 ```
 
 - скорректировать файловую структуру. Например:  
-```css
-public/
-    favicon.ico
-    index.html
-    robots.txt
-src/
-    components/
-        App/
-            App.css
-            App.js
-        Footer/
-            Footer.css
-            Footer.js
-        etc...
-
-    contexts/
-        CurrentUserContext.js
-
-    images/
-        icons/
-            arrow-right-white.svg
-        logo.svg
-        etc...
-
-    utils/
-        MainApi.js
-        constants.js
-        jwt.js
-        etc...
-
-    vendor/
-        fonts/
-            Inter-Black.woff
-            Inter-Black.woff2
-            etc...
-            LICENSE.txt
-            fonts.css
-        normalize.css
-
-    App.test.js
-    index.css
-    index.js
-    reportWebVitals.js
-    setupTests.js
-
-.editorconfig
-.gitignore
-README.md
-package-lock.json
-package.json
+```js
+- public/
+    - favicon.ico
+    - index.html
+    - robots.txt
+- src/
+    - components/
+        - App/
+            - App.css
+            - App.js
+        - Footer/
+            - Footer.css
+            - Footer.js
+        - etc...
+    - contexts/
+        - CurrentUserContext.js
+    - images/
+        - icons/
+            - arrow-right-white.svg
+        - logo.svg
+        - etc...
+    - utils/
+        - MainApi.js
+        - constants.js
+        - jwt.js
+        - etc...
+    - vendor/
+        - fonts/
+            - Inter-Black.woff
+            - Inter-Black.woff2
+            - etc...
+            - LICENSE.txt
+            - fonts.css
+        - normalize.css
+    - App.test.js
+    - index.css
+    - index.js
+    - reportWebVitals.js
+    - setupTests.js
+- .editorconfig
+- .gitignore
+- README.md
+- package-lock.json
+- package.json
 ```
 - создать компоненты
