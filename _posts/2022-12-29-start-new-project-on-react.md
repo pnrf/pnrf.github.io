@@ -105,31 +105,10 @@ yarn-error.log*
 
 - из директории с проектом установить Storybook командой: `npx storybook init`. При необходимости выполнить требуемые установщиком действия. Storybook после установки запускается командой `npm run storybook` на 6006 порту (`http://localhost:6006/`).
 
-- в директории `public` изменить favicon.ico, robots.txt и index.html:
-
-```html
-<!-- index.html -->
-
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="детский, сад, Митино, дети, английский, язык">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="description" content="Английский детский сад в Митино для детей с 2 до 7 лет с погружением в языковую среду, собственной кухней, охраняемой огороженной территорией, медицинским кабинетом и соляной пещерой для сохранения и укрепления здоровья детей">
-    <title>Kids Story — билингвальный детский сад в Митино</title>
-  </head>
-  <body>
-    <noscript>Чтобы сайт работал корректно, разрешите вашему браузеру использовать JavaScript. Это можно сделать в настройках вашего браузера</noscript>
-    <div id="root"></div>
-  </body>
-</html>
-```
-
 - скорректировать файловую структуру. Например:  
 
+```html
+<!--Это файловя струтктура. Тег <code> использован для корректного отображения структуры в блоге. Смысловую нагрузку не несет-->
 <code>
     - public/
         - favicon.ico
@@ -140,6 +119,7 @@ yarn-error.log*
             - App/
                 - App.css
                 - App.js
+                - App.test.js
             - Footer/
                 - Footer.css
                 - Footer.js
@@ -164,7 +144,6 @@ yarn-error.log*
                 - LICENSE.txt
                 - fonts.css
             - normalize.css
-        - App.test.js
         - index.css
         - index.js
         - reportWebVitals.js
@@ -175,5 +154,57 @@ yarn-error.log*
     - package-lock.json
     - package.json
 </code>
+```
+- в директории `public` изменить favicon.ico, robots.txt и index.html:
 
+```html
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="детский, сад, Митино, дети, английский, язык">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Английский детский сад в Митино для детей с 2 до 7 лет с погружением в языковую среду">
+    <title>Kids Story — билингвальный детский сад в Митино</title>
+  </head>
+  <body>
+    <noscript>Чтобы сайт работал корректно, разрешите вашему браузеру использовать JavaScript. Это можно сделать в настройках вашего браузера</noscript>
+    <div id="root"></div>
+  </body>
+</html>
+```
+
+- добавить normalize.css и шрифты в директорию vendors;
+- отредактировать index.css. Например:
+
+```css
+/* index.css */
+
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+#root {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1920px;
+  min-width: 320px;
+  background-color: #fff;
+  color: #334155;
+  font-family: 'Montserrat', Arial, sans-serif;
+  cursor: auto;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+```
+- отредактировать
 - создать компоненты
