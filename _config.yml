@@ -26,9 +26,9 @@ description: "На этом сайте я оставляю небольшие з
 author: © 2023. Юрий Панкратов
 email: pankratov.web@mail.ru
 
-domain: pnrf.github.io/blog
-url: https://pnrf.github.io/blog # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+domain: pnrf.github.io
+url: https://pnrf.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 
 # twitter_username: jekyllrb
 github_username:  "pnrf"
