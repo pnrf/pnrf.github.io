@@ -8,7 +8,7 @@ categories: tools and settings
 Уютное место, доброжелательное окружение и отлаженные инструменты крайне важны для эффективной работы. Воспользовался советами от [WebDeign Master](https://webdesign-master.ru/blog/tools/vscode.html), чтобы настроить под себя VSCode и в дальнейшем на это не отвлекаться.
 
 **Сайт VS Code:**
-- https://code.visualstudio.com -- скачать и установить редактор (бесплатно);
+- https://code.visualstudio.com -- скачать и установить редактор (это бесплатно);
 
 **Настройки VS Code**
 - `code > parameters > settings` -- открыть окно настроек редактора;
