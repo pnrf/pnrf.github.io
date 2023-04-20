@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  "Начать новый проект на React.js"
+title:  "Новый проект на React.js + Storybook"
 date:   2022-12-29 11:38:01 +0300
 categories: dev tools
 ---
 
-Алгоритм действий для запуска нового проекта на [React.js](https://ru.reactjs.org/docs/getting-started.html). Компоненты протестированы в [Storybook](https://storybook.js.org).
+Алгоритм действий для запуска нового проекта на [React.js](https://ru.reactjs.org/docs/getting-started.html) с возможностью тестирования компонентов в [Storybook](https://storybook.js.org).
 
 ### Последовательность действий:
 - на github.com создать новый репозиторий;
 
 - клонировать репозиторий на компьютер командой `git clone <SSH>`, где SSH копируем из созданного github-репозитория;
 
-- находясь в родительской директории склонированного репозитория, установить React командой `npx create-react-app название_проекта`. Название проекта должно совпадать с названием склонированного репозитория;
+- находясь в **родительской** директории склонированного репозитория, установить React командой `npx create-react-app название_проекта`. Название проекта должно совпадать с названием склонированного репозитория;
 
 - создать файл `.editorconfig`:
 
@@ -62,14 +62,16 @@ insert_final_newline = true
 ```
 //.gitignore
 
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
 
 # Logs
 logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # dependencies
 /node_modules
@@ -91,7 +93,6 @@ yarn-error.log*
 /build
 
 # misc
-.env
 .env.local
 .env.development.local
 .env.test.local
@@ -103,7 +104,7 @@ yarn-error.log*
 ```
 - отредактировать `Readme.md`;
 
-- из директории с проектом установить Storybook командой: `npx storybook init`. При необходимости выполнить требуемые установщиком действия. Storybook после установки запускается командой `npm run storybook` на 6006 порту (`http://localhost:6006/`).
+- из директории с проектом установить Storybook командой: `npx storybook@latest init` (см. официальную [документацию](https://storybook.js.org/docs/react/get-started/install/)). При необходимости выполнить требуемые установщиком действия. После установки Storybook запускается изолированно от основного приложения командой `npm run storybook` на 6006 порту (`http://localhost:6006/`).
 
 - скорректировать файловую структуру. Например:  
 
@@ -171,9 +172,14 @@ yarn-error.log*
     <meta name="description" content="Английский детский сад в Митино для детей с 2 до 7 лет с погружением в языковую среду">
     <title>Kids Story — билингвальный детский сад в Митино</title>
   </head>
-  <body>
-    <noscript>Чтобы сайт работал корректно, разрешите вашему браузеру использовать JavaScript. Это можно сделать в настройках вашего браузера</noscript>
-    <div id="root"></div>
+  <body class="root">
+		<div class="page">
+			<noscript id="nojs">
+				<div style="margin: 10px 10px; padding: 10px 30px; color: #FFF; background-color: #0000DE; font-family: Ubuntu, OpenSans,sans-serif; text-align:center; border-radius: 20px 0;">
+					Для корректной работы сайта, пожалуйста, включите JavaScript в настройках вашего браузера
+				</div>
+			</noscript>
+		</div>
   </body>
 </html>
 ```
@@ -206,5 +212,4 @@ yarn-error.log*
   -moz-text-size-adjust: 100%;
 }
 ```
-- отредактировать
-- создать компоненты
+- создать stories для компонентов.
