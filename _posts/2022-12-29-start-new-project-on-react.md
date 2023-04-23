@@ -62,6 +62,7 @@ insert_final_newline = true
 ```
 //.gitignore
 
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # Sass
 .sass-cache/
