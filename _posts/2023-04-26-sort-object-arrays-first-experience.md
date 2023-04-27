@@ -43,12 +43,12 @@ export const signUpButton1 = {
 ```jsx
 export const renderButtonsBySize = (Story, ButtonStories) => {
 
-// изначальный объект с данными (переменные);
+// 1. изначальный объект с данными (переменные). Его можно импортировать из БД через API;
   const buttonsObj = {
     signUpButton1, signUpButton2, signUpButton3, signUpButton4, signUpButton5, signUpButton6
   };
 
-// создаем новый объект с вариантами значений. Т.е. из всех свойств объекта вытаскиваем только нужные (ширину кнопки);
+// 2. создаем новый объект с вариантами значений. Т.е. из всех свойств объекта вытаскиваем только нужные (ширину кнопки);
   const makeNewButtonObj = () => {
     const newButtonsObj = {};
 
@@ -59,7 +59,7 @@ export const renderButtonsBySize = (Story, ButtonStories) => {
     return newButtonsObj;
   };
 
-// формируем массив значений. Т.е. нужно понять, какие вообще есть значения ширины кнопок. Это послужит эталоном для сравнения.
+// 3. формируем объект значений. Т.е. нужно понять, какие вообще есть значения ширины кнопок. Это послужит эталоном для сравнения.
   const createSizesArr = () => {
     const sizesArr = Object.values(makeNewButtonObj());
     let sortedSizesArr = sizesArr.filter((element, index, self) => {
@@ -69,8 +69,8 @@ export const renderButtonsBySize = (Story, ButtonStories) => {
     return sortedSizesArr;
   };
 
-// 1. перебираем объект с кнопками и сравниваем их ширину с эталоном.
-// 2. тем самым создаем новый массив ну нужной последовательности - по ширине кнопки. При этом сохраняем названия ключей. Именно они нам важны, чтобы конкатенировать их.
+// 4. перебираем объект с кнопками и сравниваем их ширину с эталоном.
+// 5. тем самым создаем новый массив ну нужной последовательности - по ширине кнопки. При этом сохраняем названия ключей. Именно они нам важны, чтобы конкатенировать их.
 
   const sortButtonsBySize = () => {
     const newButtonsObj = makeNewButtonObj();
@@ -88,7 +88,15 @@ export const renderButtonsBySize = (Story, ButtonStories) => {
 
     return sortedButtonsArr;
   };
+};
 
-  const arr = sortButtonsBySize();
+// Не забыть вызвать функцию! Здесь или в другом файле, куда мы ее экспортируем.
+renderButtonsBySize();
 
 ```
+В названиях функций допущена ошибка: 
+- `Arr` - это массив;
+- `Obj` - это объект;
+- Как видно из кода, массив создается только в последней функции.
+
+Возможно, классовый подход с инкапсуляцией методов здесь был бы более уместен. Пока не знаю. Подумаю.
