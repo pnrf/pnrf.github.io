@@ -28,7 +28,7 @@ categories: tech docs
 #### A Guide to the Project Management Body of Knowledge (PMBOK GUIDE):
 
 1. Каналы коммуникации между стейкхолдерами:  
-<img src="../img/communication-channels.jpg" alt="схема каналов коммуникации">  
+<img src="https://github.com/pnrf/pnrf.github.io/blob/main/img/communication-channels.jpg" alt="схема каналов коммуникации">  
 
 2. Виды коммуникаций:
 - интерактивные (realtime): телефон, skype, встреча...
