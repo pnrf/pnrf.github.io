@@ -16,13 +16,7 @@ categories: tech docs
 - пользовательская документация (руководство пользователя): [https://yandex.ru/support/mail/index.html](https://yandex.ru/support/mail/index.html)
 - техническая документация для разработчиков и продвинутых пользователей: [https://git-scm.com/docs](https://git-scm.com/docs)
 - техническая документация в виде Readme: [https://github.com/storybookjs/storybook](https://github.com/storybookjs/storybook)
-
-> Например, вот, что документирует Яндекс (из выступления ["Я.Технический писатель"](https://youtu.be/djnzua4C3ss) Академии Яндекса):
-> - Внутренние технологии;
-> - Внешние API ([https://yandex.ru/dev/](https://yandex.ru/dev/));
-> - Open Source технологии Яндекса (например, [https://ru.bem.info](https://ru.bem.info));
-> - Сервисы Яндекса для пользователей ([http://yandex.ru/support](http://yandex.ru/support)).
-
+    
 #### Виды технической документации:
 - руководства пользователя;
 - документация по API;
