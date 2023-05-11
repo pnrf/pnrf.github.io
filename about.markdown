@@ -18,11 +18,13 @@ permalink: /about/
 > *В работе, в поисках пути, в сердечной смуте.*  
 > *(Борис Пастернак)*  
 
-### Кто я
+### Контакты
 
+Доступен онлайн для всех регионов России:
 
-  
-
+- Telegram: [@pnrf_tg](https://t.me/pnrf_tg)
+- Email: pankratov.web@mail.ru
+- Github: [https://github.com/pnrf](https://github.com/pnrf)
 
 ### Профессиональный путь
 
