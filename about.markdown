@@ -45,6 +45,8 @@ permalink: /about/
 - пытаюсь разобраться с ГОСТ 19 (ЕСПД) и 34 серий ([моя wiki](https://github.com/pnrf/public/wiki))
 - приступил к поиску работы ([мое резюме](https://career.habr.com/pnrf)).
 
+<a name="actual-aim"></a>
+
 ### Цель
 
 Стремлюсь стать частью команды людей, объединенных целью создавать надежные онлайн-сервисы и веб-приложения.  
@@ -113,6 +115,8 @@ permalink: /about/
         <img src="https://img.shields.io/badge/Photoshop-informational?style=flat&logo=Adobe-Photoshop&logoColor=white&labelColor=31A8FF&color=4E4E4E" alt="Adobe Photoshop home page" />
     </a>
 </p>
+
+*[назад к оглавлению](#table-of-content)*
 
 <a name="faq"></a>
 
@@ -189,6 +193,8 @@ permalink: /about/
 	</p>
 </details>
 <p></p>
+
+*[назад к оглавлению](#table-of-content)*
 
 <a name="contacts"></a>
 
